@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px;
+    background-image: radial-gradient(#ccc 1px, transparent 0);
+    background-size: 20px 20px;
+    padding-left: 250px;
+
+  }
+
+  header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  h2.handwritten {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .highlight {
+    color: #c837a9;
+  }
+
+  .button {
+    background: #000;
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    display: inline-block;
+
+  }
+
+  .section {
+    margin: 60px 0;
+  }
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .hero-text {
+    max-width: 500px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
+  .hero-text h1 .black-box {
+    background: #000;
+    color: #fff;
+    padding: 0 8px;
+    display: inline-block;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .hero-text p {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    width: 220px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .heading-with-cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .heading-with-cards .doodle {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+
+  .arrow-container {
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
+
+  .arrow-container img {
+    position: absolute;
+    width: 120px;
+    top: 30px;
+    transform: rotate(15deg);
+  }
+
+  .sticky-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 220px;
+    height: 180px;
+    padding: 20px;
+    background: #fef3bd;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    transform: rotate(-3deg);
+    font-size: 0.95rem;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .card.blue { background: #add8ff; transform: rotate(2deg); }
+  .card.pink { background: #ffc1e3; transform: rotate(-2deg); }
+  .card.green { background: #baffc9; transform: rotate(3deg); }
+  .card.yellow { background: #fef3bd; transform: rotate(-3deg); }
+
+  footer {
+    border-top: 1px solid #ccc;
+    margin-top: 60px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  .black-box {
+background: #000;
+color: #fff;
+padding: 0 8px;
+display: inline-block;
+transform: rotate(-5deg); /* Tilt angle */
+display: inline-block;
+}
+.doodle-circle-button {
+background: url('doodle-circle.png') no-repeat center center;
+background-size: 200px;
+width: 160px;
+height: 160px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.button {
+font-family: 'Gloria Hallelujah', cursive;
+font-size: 1.1rem;
+background: none;
+border: none;
+color: #000;
+text-decoration: none;
+}
+.contact-me-doodle {
+margin-top: 80px;
+padding: 30px 0;
+background-color: #fff9e8;
+border: 2px dashed #f0c27b;
+border-radius: 20px;
+padding-left: 40px;
+}
+
+.contact-heading {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 10px;
+}
+
+.contact-heading h2 {
+font-size: 2rem;
+color: #c837a9;
+}
+
+.contact-arrow {
+width: 80px;
+transform: rotate(15deg);
+}
+
+.subtext {
+font-size: 1.1rem;
+margin-bottom: 20px;
+}
+
+.contact-info {
+margin-bottom: 30px;
+font-size: 1rem;
+line-height: 2;
+}
+
+.contact-info a {
+text-decoration: none;
+color: #000;
+}
+
+.doodle-form {
+display: flex;
+flex-direction: column;
+}
+
+.doodle-form input,
+.doodle-form textarea {
+width: 90%;
+max-width: 500px;
+padding: 10px;
+margin-bottom: 15px;
+border: 2px dotted #000;
+border-radius: 10px;
+font-family: 'DM Sans', sans-serif;
+font-size: 0.95rem;
+}
+
+.doodle-form textarea {
+height: 100px;
+resize: vertical;
+}
+
+.button-container {
+display: flex;
+justify-content: flex-start;
+}
+
+.doodle-form button {
+font-family: 'Gloria Hallelujah', cursive;
+background: #000;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 1rem;
+border-radius: 10px;
+cursor: pointer;
+transition: transform 0.2s ease;
+width: 100px;
+}
+
+.doodle-form button:hover {
+transform: scale(1.05);
+}
+
+/* === RESPONSIVE STYLES === */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    body {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 0;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      width: 200px;
+      height: auto;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    nav {
+      margin-right: 0 !important;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .heading-with-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .arrow-container {
+      width: auto;
+      height: auto;
+    }
+  
+    .sticky-cards {
+      justify-content: center;
+    }
+  
+    .contact-me-doodle {
+      margin-right: 0 !important;
+      padding: 20px;
+    }
+  }
+  
+  /* For phones and small screens */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2.handwritten {
+      font-size: 1.2rem;
+    }
+  
+    .card {
+      width: 90%;
+      height: auto;
+      font-size: 0.9rem;
+    }
+  
+    .doodle-circle-button {
+      width: 140px;
+      height: 140px;
+      background-size: contain;
+    }
+  
+    .doodle-form input,
+    .doodle-form textarea {
+      width: 100%;
+    }
+  
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-text h2 {
+      font-size: 1.3rem;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    .social-icons a {
+      margin-left: 10px;
+      font-size: 0.95rem;
+    }
+  }
+  
